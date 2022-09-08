@@ -15,7 +15,7 @@ import styles from "../styles/Home.module.css";
 
 const nftDropContractAddress = "0x1edb775355e3Db55A5A3C3B67A4f5eE47caa6134";
 const tokenContractAddress = "0x0000000000000000000000000000000000001010";
-const stakingContractAddress = "0x951Dffd834Cf860E6ea7e8A116282D3fb5E0b293"; //--1000
+const stakingContractAddress = "0x951Dffd834Cf860E6ea7e8A116282D3fb5E0b293";
 
 
 const Stake: NextPage = () => {
