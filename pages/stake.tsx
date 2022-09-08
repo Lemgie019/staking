@@ -13,9 +13,9 @@ import type { NextPage } from "next";
 import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
 
-const nftDropContractAddress = "0x322067594DBCE69A9a9711BC393440aA5e3Aaca1";
-const tokenContractAddress = "0xb1cF059e6847e4270920a02e969CA2E016AeA22B";
-const stakingContractAddress = "0xB712975e13427ac804177E7CebF08781bbF9B89c";
+const nftDropContractAddress = "0x1edb775355e3Db55A5A3C3B67A4f5eE47caa6134";
+const tokenContractAddress = "0x0000000000000000000000000000000000001010";
+const stakingContractAddress = "0x951Dffd834Cf860E6ea7e8A116282D3fb5E0b293";
 
 const Stake: NextPage = () => {
   // Wallet Connection Hooks
@@ -108,7 +108,7 @@ const Stake: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.h1}>Stake Your NFTs</h1>
+      <h1 className={styles.h2Text2}>Stake Your ROBODOGZ</h1>
 
       <hr className={`${styles.divider} ${styles.spacerTop}`} />
 
@@ -149,7 +149,7 @@ const Stake: NextPage = () => {
 
           <hr className={`${styles.divider} ${styles.spacerTop}`} />
 
-          <h2>Your Staked NFTs</h2>
+          <h2 className={styles.h2Text}>Staked ROBODOGZ</h2>
           <div className={styles.nftBoxGrid}>
             {stakedNfts?.map((nft) => (
               <div className={styles.nftBox} key={nft.metadata.id.toString()}>
@@ -170,7 +170,7 @@ const Stake: NextPage = () => {
 
           <hr className={`${styles.divider} ${styles.spacerTop}`} />
 
-          <h2>Your Unstaked NFTs</h2>
+          <h2 className={styles.h2Text}>Available ROBODOGZ</h2>
 
           <div className={styles.nftBoxGrid}>
             {ownedNfts?.map((nft) => (
