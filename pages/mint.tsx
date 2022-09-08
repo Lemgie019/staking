@@ -46,7 +46,7 @@ const Mint: NextPage = () => {
           className={`${styles.mainButton} ${styles.spacerBottom}`}
           onClick={() => claimNft()}
         >
-          Claim An NFT
+          Mint
         </button>
       )}
     </div>
