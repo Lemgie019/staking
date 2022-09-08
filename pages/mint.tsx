@@ -20,7 +20,7 @@ const Mint: NextPage = () => {
     try {
       const tx = await nftDropContract?.claim(1);
       console.log(tx);
-      alert("NFT Claimed!");
+      alert("ROBODOGZ Minted!");
       router.push(`/stake`);
     } catch (error) {
       console.error(error);
