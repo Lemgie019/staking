@@ -13,7 +13,7 @@ const Mint: NextPage = () => {
 
   // Get the NFT Collection contract
   const nftDropContract = useNFTDrop(
-    "0x322067594DBCE69A9a9711BC393440aA5e3Aaca1"
+    "0x1edb775355e3Db55A5A3C3B67A4f5eE47caa6134"
   );
 
   async function claimNft() {
@@ -30,12 +30,8 @@ const Mint: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.h1}>Mint An NFT!</h1>
+      <h1 className={styles.h2Text2}>Mint Your ROBODOGZ</h1>
 
-      <p className={styles.explain}>
-        Here is where we use our <b>NFT Drop</b> contract to allow users to mint
-        one of the NFTs that we lazy minted.
-      </p>
       <hr className={`${styles.smallDivider} ${styles.detailPageHr}`} />
 
       {!address ? (
